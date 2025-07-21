@@ -23,13 +23,13 @@ export default function Footer({ locale }: FooterProps) {
             <div className="flex items-center space-x-2">
               <Image 
                 src="/images/logo.png" 
-                alt="Aiartools Logo" 
+                alt="ImageFlux Logo" 
                 width={32} 
                 height={32}
                 className="w-8 h-8"
               />
               <h3 className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
-                Aiartools
+                ImageFlux
               </h3>
             </div>
             <p className="text-muted-foreground">{t("description")}</p>
@@ -141,7 +141,7 @@ export default function Footer({ locale }: FooterProps) {
 
         <div className="border-t mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-muted-foreground text-sm">
-            © {currentYear} Aiartools. {t("copyright")}
+            © {currentYear} ImageFlux. {t("copyright")}
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link

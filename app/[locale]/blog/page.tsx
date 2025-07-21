@@ -14,13 +14,13 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params
   
   const titles = {
-    en: "Blog - Aiartools | AI Image Editing Tips & News",
-    zh: "博客 - Aiartools | AI图像编辑技巧与新闻"
+    en: "Blog - ImageFlux | AI Image Editing Tips & News",
+    zh: "博客 - ImageFlux | AI图像编辑技巧与新闻"
   }
   
   const descriptions = {
-    en: "Discover the latest AI image editing tips, tutorials, and news from Aiartools. Learn how to transform your images with artificial intelligence.",
-    zh: "探索来自Aiartools的最新AI图像编辑技巧、教程和新闻。学习如何用人工智能变换您的图像。"
+    en: "Discover the latest AI image editing tips, tutorials, and news from ImageFlux. Learn how to transform your images with artificial intelligence.",
+    zh: "探索来自ImageFlux的最新AI图像编辑技巧、教程和新闻。学习如何用人工智能变换您的图像。"
   }
 
   const title = titles[locale as keyof typeof titles] || titles.en
@@ -32,8 +32,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     openGraph: {
       title,
       description,
-      url: `https://aiartools.com/${locale}/blog`,
-      siteName: "Aiartools",
+      url: `https://ImageFlux.tools/${locale}/blog`,
+      siteName: "ImageFlux",
       locale: locale === 'zh' ? 'zh_CN' : 'en_US',
       type: 'website',
     },
@@ -43,10 +43,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       description,
     },
     alternates: {
-      canonical: `https://aiartools.com/${locale}/blog`,
+      canonical: `https://ImageFlux.tools/${locale}/blog`,
       languages: {
-        'en': 'https://aiartools.com/en/blog',
-        'zh': 'https://aiartools.com/zh/blog',
+        'en': 'https://ImageFlux.tools/en/blog',
+        'zh': 'https://ImageFlux.tools/zh/blog',
       },
     },
   }
@@ -79,17 +79,17 @@ function BlogContent({ locale }: { locale: string }) {
       key: "contact",
       link: `/${locale}/blog/contact-us`,
       sortDate: "2025-06-01",
-      image: "/images/Get in Touch with Aiartools Team.png"
+      image: "/images/Get in Touch with ImageFlux Team.png"
     },
     {
       key: "editingGuide",
       link: `/${locale}/blog/how-to-edit-images`,
       sortDate: "2025-06-01",
-      image: "/images/How to Edit Images with Aiartools.png"
+      image: "/images/How to Edit Images with ImageFlux.png"
     },
     {
       key: "introduction",
-      link: `/${locale}/blog/introducing-aiartools`,
+      link: `/${locale}/blog/introducing-imageflux`,
       sortDate: "2025-05-31",
       image: "/images/Transform Your Images with the Power of AI.png"
     },

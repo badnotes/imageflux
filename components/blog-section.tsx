@@ -21,17 +21,18 @@ export default function BlogSection({ locale }: BlogSectionProps) {
       key: "contact",
       link: `/${locale}/blog/contact-us`,
       sortDate: "2025-06-01",
-      image: "/images/Get in Touch with Aiartools Team.png"
+      image: "/images/Get in Touch with ImageFlux Team.png"
+
     },
     {
       key: "editingGuide", 
       link: `/${locale}/blog/how-to-edit-images`,
       sortDate: "2025-06-01",
-      image: "/images/How to Edit Images with Aiartools.png"
+      image: "/images/How to Edit Images with ImageFlux.png"
     },
     {
       key: "introduction",
-      link: `/${locale}/blog/introducing-aiartools`,
+      link: `/${locale}/blog/introducing-imageflux`,
       sortDate: "2025-05-31",
       image: "/images/Transform Your Images with the Power of AI.png"
     },

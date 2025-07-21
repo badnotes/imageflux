@@ -93,7 +93,7 @@ export async function POST(request: NextRequest) {
     
     const emailResult = await sendEmail({
       to: user.email,
-      subject: locale === 'zh' ? 'Aiartools - 邮箱验证' : 'Aiartools - Email Verification',
+      subject: locale === 'zh' ? 'ImageFlux - 邮箱验证' : 'ImageFlux - Email Verification',
       html: emailHtml,
     });
 

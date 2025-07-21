@@ -36,9 +36,9 @@ export async function generateMetadata({
     title: t('title'),
     description: t('description'),
     keywords: t('keywords'),
-    authors: [{ name: 'Aiartools Team' }],
-    creator: 'Aiartools',
-    publisher: 'Aiartools',
+    authors: [{ name: 'ImageFlux Team' }],
+    creator: 'ImageFlux',
+    publisher: 'ImageFlux',
     robots: {
       index: true,
       follow: true,
@@ -54,10 +54,10 @@ export async function generateMetadata({
       type: 'website',
       locale: locale,
       alternateLocale: locale === 'en' ? 'zh' : 'en',
-      url: 'https://aiartools.com',
+      url: 'https://ImageFlux.tools',
       title: t('ogTitle'),
       description: t('ogDescription'),
-      siteName: 'Aiartools',
+      siteName: 'ImageFlux',
       images: [
         {
           url: '/images/og-image.png',
@@ -72,19 +72,19 @@ export async function generateMetadata({
       title: t('twitterTitle'),
       description: t('twitterDescription'),
       images: ['/images/og-image.png'],
-      creator: '@aiartools',
-      site: '@aiartools',
+      creator: '@ImageFlux',
+      site: '@ImageFlux',
     },
     icons: {
       icon: "/images/favicon.ico",
     },
     manifest: '/site.webmanifest',
     alternates: {
-      canonical: `https://aiartools.com/${locale}`,
+      canonical: `https://ImageFlux.tools/${locale}`,
       languages: {
-        'en': 'https://aiartools.com/en',
-        'zh': 'https://aiartools.com/zh',
-        'x-default': 'https://aiartools.com/en',
+        'en': 'https://ImageFlux.tools/en',
+        'zh': 'https://ImageFlux.tools/zh',
+        'x-default': 'https://ImageFlux.tools/en',
       },
     },
   }
@@ -124,11 +124,11 @@ export default async function LocaleLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebApplication",
-              "name": "Aiartools",
+              "name": "ImageFlux",
               "description": locale === 'zh' 
                 ? "用AI的力量改变你的图像。简单、快速、功能强大。"
                 : "Transform your images with the power of AI. Simple, fast, and incredibly powerful.",
-              "url": "https://aiartools.com",
+              "url": "https://ImageFlux.tools",
               "applicationCategory": "DesignApplication",
               "operatingSystem": "Web",
               "offers": {

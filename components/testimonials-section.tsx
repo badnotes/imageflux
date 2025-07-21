@@ -21,7 +21,7 @@ export default function TestimonialsSection({ locale }: TestimonialsSectionProps
       name: "Alex Doe",
       role: t("testimonial1.role"),
       content: t("testimonial1.content"),
-      avatar: "/images/Alex Doe.jpeg",
+      avatar: "/images/AlexDoe.jpeg",
       rating: 5,
     },
     {

@@ -550,7 +550,7 @@ export default function InteractiveDemo({ locale }: InteractiveDemoProps) {
       
       const link = document.createElement('a')
       link.href = url
-      link.download = `aiartools-generated-${Date.now()}.png`
+      link.download = `imageflux-generated-${Date.now()}.png`
       document.body.appendChild(link)
       link.click()
       document.body.removeChild(link)
@@ -577,7 +577,7 @@ export default function InteractiveDemo({ locale }: InteractiveDemoProps) {
       
       const link = document.createElement('a')
       link.href = url
-      link.download = `aiartools-multi-${index + 1}-${Date.now()}.png`
+      link.download = `imageflux-multi-${index + 1}-${Date.now()}.png`
       document.body.appendChild(link)
       link.click()
       document.body.removeChild(link)

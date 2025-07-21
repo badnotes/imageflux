@@ -12,13 +12,13 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params
   
   const titles = {
-    en: "Contact Aiartools Team | Get Support & Connect With Us",
-    zh: "联系Aiartools团队 | 获取支持并与我们取得联系"
+    en: "Contact ImageFlux Team | Get Support & Connect With Us",
+    zh: "联系ImageFlux团队 | 获取支持并与我们取得联系"
   }
   
   const descriptions = {
-    en: "Get in touch with the Aiartools team for support, feedback, or partnerships. Multiple contact methods available including email, social media, and more.",
-    zh: "联系Aiartools团队获取支持、反馈或合作机会。多种联系方式可选，包括电子邮件、社交媒体等。"
+    en: "Get in touch with the ImageFlux team for support, feedback, or partnerships. Multiple contact methods available including email, social media, and more.",
+    zh: "联系ImageFlux团队获取支持、反馈或合作机会。多种联系方式可选，包括电子邮件、社交媒体等。"
   }
 
   const title = titles[locale as keyof typeof titles] || titles.en
@@ -30,16 +30,16 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     openGraph: {
       title,
       description,
-      url: `https://aiartools.com/${locale}/blog/contact-us`,
-      siteName: "Aiartools",
+      url: `https://imageflux.tools/${locale}/blog/contact-us`,
+      siteName: "ImageFlux",
       locale: locale === 'zh' ? 'zh_CN' : 'en_US',
       type: 'article',
       images: [
         {
-          url: 'https://aiartools.com/images/Get in Touch with Aiartools Team.png',
+          url: 'https://imageflux.tools/images/Get in Touch with ImageFlux Team.png',
           width: 1000,
           height: 400,
-          alt: 'Contact Aiartools Team',
+          alt: 'Contact ImageFlux Team',
         },
       ],
     },
@@ -47,13 +47,13 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       card: 'summary_large_image',
       title,
       description,
-      images: ['https://aiartools.com/images/Get in Touch with Aiartools Team.png'],
+      images: ['https://imageflux.tools/images/Get in Touch with ImageFlux Team.png'],
     },
     alternates: {
-      canonical: `https://aiartools.com/${locale}/blog/contact-us`,
+      canonical: `https://imageflux.tools/${locale}/blog/contact-us`,
       languages: {
-        'en': 'https://aiartools.com/en/blog/contact-us',
-        'zh': 'https://aiartools.com/zh/blog/contact-us',
+        'en': 'https://imageflux.tools/en/blog/contact-us',
+        'zh': 'https://imageflux.tools/zh/blog/contact-us',
       },
     },
   }
@@ -71,13 +71,13 @@ export default async function ContactUs({ params }: BlogPostProps) {
       en: {
         backToHome: "Back to Home",
         backToBlog: "Back to Blog",
-        title: "Get in Touch with Aiartools Team",
+        title: "Get in Touch with ImageFlux Team",
         publishDate: "June 1, 2025",
         readTime: "3 min read",
         category: "Contact",
         introduction: "We're Here to Help",
         introText:
-          "At Aiartools, we value open communication with our users and are always eager to hear your feedback, answer your questions, or assist with any issues you might encounter. This guide outlines the various ways you can reach our team.",
+          "At ImageFlux, we value open communication with our users and are always eager to hear your feedback, answer your questions, or assist with any issues you might encounter. This guide outlines the various ways you can reach our team.",
         contactMethods: "Contact Methods",
         emailTitle: "Email Support",
         emailText:
@@ -97,10 +97,10 @@ export default async function ContactUs({ params }: BlogPostProps) {
           "For partnership opportunities, enterprise plans, or media inquiries, please email us with the subject line 'Business Inquiry' at wt@wmcircle.cn.",
         feedbackTitle: "Feedback and Feature Request",
         feedbackText:
-          "We're constantly working to improve Aiartools based on user feedback. If you have suggestions for new features or improvements, we'd love to hear from you! Send your ideas to wt@wmcircle.cn with the subject 'Feature Request'.",
+          "We're constantly working to improve ImageFlux based on user feedback. If you have suggestions for new features or improvements, we'd love to hear from you! Send your ideas to wt@wmcircle.cn with the subject 'Feature Request'.",
         bugReportsTitle: "Bug Reports",
         bugReportsText:
-          "If you encounter any issues while using Aiartools, please let us know so we can fix them promptly. When reporting a bug, please include:",
+          "If you encounter any issues while using ImageFlux, please let us know so we can fix them promptly. When reporting a bug, please include:",
         bugReportsList: [
           "A clear description of the issue",
           "Steps to reproduce the problem",
@@ -114,22 +114,22 @@ export default async function ContactUs({ params }: BlogPostProps) {
         officeHoursText: "Our support team is available Monday through Friday, 9:00 AM to 6:00 PM (UTC+8).",
         communityTitle: "Join Our Community",
         communityText:
-          "Connect with other Aiartools users to share tips, showcase your creations, and get inspired. Our growing community is a great resource for learning new techniques and getting quick answers.",
+          "Connect with other ImageFlux users to share tips, showcase your creations, and get inspired. Our growing community is a great resource for learning new techniques and getting quick answers.",
         conclusionTitle: "We Look Forward to Hearing from You",
         conclusionText:
-          "Your feedback and questions help us make Aiartools better. Don't hesitate to reach out—we're here to help you make the most of our AI image transformation tools.",
+          "Your feedback and questions help us make ImageFlux better. Don't hesitate to reach out—we're here to help you make the most of our AI image transformation tools.",  
         contactCTA: "Contact Us Today",
       },
       zh: {
         backToHome: "返回首页",
         backToBlog: "返回博客",
-        title: "联系Aiartools团队",
+        title: "联系ImageFlux团队",
         publishDate: "2025年6月1日",
         readTime: "3分钟阅读",
         category: "联系我们",
         introduction: "我们随时为您提供帮助",
         introText:
-          "在Aiartools，我们重视与用户的开放沟通，并始终渴望听取您的反馈、回答您的问题或协助解决您可能遇到的任何问题。本指南概述了联系我们团队的各种方式。",
+          "在ImageFlux，我们重视与用户的开放沟通，并始终渴望听取您的反馈、回答您的问题或协助解决您可能遇到的任何问题。本指南概述了联系我们团队的各种方式。",
         contactMethods: "联系方式",
         emailTitle: "电子邮件支持",
         emailText:
@@ -147,9 +147,9 @@ export default async function ContactUs({ params }: BlogPostProps) {
         businessText: "对于合作机会、企业计划或媒体咨询，请发送电子邮件至wt@wmcircle.cn，主题为'商务咨询'。",
         feedbackTitle: "反馈和功能请求",
         feedbackText:
-          "我们不断根据用户反馈改进Aiartools。如果您对新功能或改进有建议，我们很乐意听取您的意见！请将您的想法发送至wt@wmcircle.cn，主题为'功能请求'。",
+          "我们不断根据用户反馈改进ImageFlux。如果您对新功能或改进有建议，我们很乐意听取您的意见！请将您的想法发送至wt@wmcircle.cn，主题为'功能请求'。",
         bugReportsTitle: "错误报告",
-        bugReportsText: "如果您在使用Aiartools时遇到任何问题，请告诉我们，以便我们及时修复。报告错误时，请包括：",
+        bugReportsText: "如果您在使用ImageFlux时遇到任何问题，请告诉我们，以便我们及时修复。报告错误时，请包括：",
         bugReportsList: ["清晰的问题描述", "重现问题的步骤", "截图（如适用）", "您的设备和浏览器信息"],
         responseTimeTitle: "响应时间",
         responseTimeText: "我们努力在工作日24小时内回复所有咨询。复杂的技术问题可能需要额外的调查时间。",
@@ -157,10 +157,10 @@ export default async function ContactUs({ params }: BlogPostProps) {
         officeHoursText: "我们的支持团队在周一至周五，上午9:00至下午6:00（UTC+8）提供服务。",
         communityTitle: "加入我们的社区",
         communityText:
-          "与其他Aiartools用户联系，分享技巧，展示您的创作，并获得灵感。我们不断成长的社区是学习新技术和获得快速答案的绝佳资源。",
+          "与其他ImageFlux用户联系，分享技巧，展示您的创作，并获得灵感。我们不断成长的社区是学习新技术和获得快速答案的绝佳资源。",
         conclusionTitle: "我们期待您的来信",
         conclusionText:
-          "您的反馈和问题帮助我们改进Aiartools。请随时联系我们——我们在这里帮助您充分利用我们的AI图像转换工具。",
+          "您的反馈和问题帮助我们改进ImageFlux。请随时联系我们——我们在这里帮助您充分利用我们的AI图像转换工具。",
         contactCTA: "立即联系我们",
       },
     }
@@ -212,8 +212,8 @@ export default async function ContactUs({ params }: BlogPostProps) {
               {/* Featured Image */}
               <div className="mb-10 rounded-xl overflow-hidden">
                 <Image
-                  src="/images/Get in Touch with Aiartools Team.png"
-                  alt="Contact Aiartools Team"
+                  src="/images/Get in Touch with ImageFlux Team.png"
+                  alt="Contact ImageFlux Team"
                   width={1000}
                   height={400}
                   className="w-full object-cover"
